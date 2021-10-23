@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        ul.space_list li {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body style="padding: 0%; margin: 0%;">
+
+    <!-- header -->
+    <div class="row" style="background-color: grey;">
+    <div style="flex: 0 0 auto; width: 16.66666667%;">
+            <ul style="display: flex; align-items: center;list-style: none; justify-content: start; margin-top: 9%;">
+                <img src="HITAM.png" style="margin-right: 3%; max-width: 10%; height: auto;" alt="" srcset="">
+                <li style="font-size: 150%;">Site Name</li>
+            </ul>
+        </div>
+        <div style=" display: flex; align-items: center; flex: 0 0 auto; width: 25%;">
+            <span style="font-size: 120%;"><a href="" style=" color: blue;">Category 1 </a> <b
+                    style="font-size: 120%;">|</b> <a href="" style=" color: blue;">Category 2 </a> <b
+                    style="font-size: 120%;">|</b> <a href="" style=" color: blue;">Category 3</a></span>
+
+        </div>
+
+        <div
+            style="margin-left: auto ;text-align: right; display: flex; align-items: center; flex: 0 0 auto; width: 25%;">
+            <span style="font-size: 120%; display: flex; align-items: center; justify-content: end; margin-right: 10%;">
+                <img src="search.png" style="max-width: 12%;" alt="" srcset=""> <img src="cart.png"
+                    style="max-width: 20%;" alt="" srcset=""><b> Cart (1)</b>
+            </span>
+
+        </div>
+    </div>
+    <!-- header close -->
+
+    <!-- body -->
+    <div class="row" style="margin-top: 5%; margin-left: 3%;">
+    <div style="flex: 0 0 auto; width: 100%;">
+            <div class="row">
+            <div style="flex: 0 0 auto; width: 66.66666667%;">
+                    <h1 style="margin-top: -0.5%;">Your Cart</h1>
+                    <hr>
+                <div class="row">
+                <div style="flex: 0 0 auto; width: 50%;">Item</div>
+                <div style="flex: 0 0 auto; width: 25%;">Price</div>
+                <div style="flex: 0 0 auto; width: 25%;">Quality</div>
+            </div>
+<hr>
+            <div class="row">
+                <div style="display: flex; align-items: center; flex: 0 0 auto; width: 50%;">
+                        <img src="HITAM.png" style="max-width: 20%; margin-right: 3%;
+                        height: auto;" alt="" srcset=""><b> T-shirt <br> size: Small</b>
+                </div>
+                        <div style="flex: 0 0 auto; width: 25%;">
+                            <h3>$20.00</h3>
+                        </div>
+                    <div style="flex: 0 0 auto; width: 25%;">
+                            <h3 action="">
+                                <select name="cars" id="cars">
+                                    <option value="volvo">1</option>
+                                    <option value="saab">2</option>
+                                    <option value="opel">3</option>
+                                    <option value="audi">4</option>
+                                </select>
+                            </h3>
+                    </div>
+            </div>
+
+                </div>
+                <div style="background-color: gray; margin-left: 4%; flex: 0 0 auto; width: 25%;">
+                <div class="row" style="padding: 5%;">
+                    <div style="flex: 0 0 auto; width: 100%;">
+                    <div class="row" style="">
+                        <h2>Summary (1 Item)</h2>
+                        <div style="flex: 0 0 auto; width: 50%;">Subtotal</div>
+                        <div style="text-align: right; flex: 0 0 auto; width: 50%;">$20.00</div>
+                    </div>
+                            <div class="row" style="margin-top: 2%;">
+                                <div style="flex: 0 0 auto; width: 50%;">Shopping</div>
+                                <div style="text-align: right; flex: 0 0 auto; width: 50%;"> - </div>
+                            </div>
+                            <div class="row" style="margin-top: 2%;">
+                                <div style="flex: 0 0 auto; width: 50%;">Est Taxes</div>
+                                <div style="text-align: right; flex: 0 0 auto; width: 50%;"> - </div>
+                            </div>
+<br>
+                            <hr style="color: white; font-weight: 100px;">
+
+                            <div class="row">
+                                <h3 style="flex: 0 0 auto; width: 50%;">Total</h3>
+                                <h3 style="text-align: right; flex: 0 0 auto; width: 50%;">$20.00 </h3>
+                            </div>
+                            <div class="row">
+                                <div style="text-align: center; flex: 0 0 auto; width: 100%;">
+                                    <button type="submit"
+                                        style="background-color: blue; width: 90%; color: white; border: 2px solid black;">
+                                        <b>Checkout</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row" style="margin-left: 3%; margin-bottom: 30%;">
+    <div style="flex: 0 0 auto; width: 100%;">
+        <div class="row">
+             <div style=" text-align: right; flex: 0 0 auto; width: 66.66666667%;">
+<hr>
+            Subtotal: <b>$20.00</b>
+<hr>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- body close -->
+
+    <!-- footer -->
+
+    <div style="border-top: 2px solid black; width: 100%; bottom: 0px; display: flex;">
+    <div style="flex: 0 0 auto; width: 100%;">
+         <div class="row" style="margin-left: 5%; margin-right: 5%;">
+         <div style="flex: 0 0 auto; width: 50%;">
+            <span style="display: flex; align-items: center;height: 35%; margin-top: 2%;">
+                 <h4 style="margin-right: 3%;">Site Name</h3>
+             <span style="font-size: 100%;"><a href="" style=" color: blue;">Category X </a> <b
+                 style="font-size: 120%;">|</b> <a href="" style=" color: blue;">Category Y </a> <b
+                style="font-size: 120%;">|</b> <a href="" style=" color: blue;">Category Z</a></span>
+            </span>
+            <span style="display: flex;">
+        <div style="background-color: gray; color: white; margin-right: 1%; padding: 0.5%; font-size: 75%;">VISA</div>
+        <div style="background-color: gray; color: white; margin-right: 1%; padding: 0.5%; font-size: 75%;">BRI</div>
+        <div style="background-color: gray; color: white; margin-right: 1%; padding: 0.5%; font-size: 75%;">Mandiri</div>
+                    </span>
+                </div>
+                <div style="text-align: right; justify-content: right; display: flex; flex: 0 0 auto; width: 50%;">
+                <div style="margin-top: 3%; margin-right: 5%;">
+                        <form action="">
+                            <span style="font-size: large;"><b>Stay In Touch! Join our Newsletter</b> </span><br>
+                            <input type="text" name="anak" placeholder="Enter Email" style=" width: 67%;" />
+                            <button type="submit" style="background-color: gray; color: white;">Subscribe</button>
+                        </form>
+                </div>
+                </div>
+                </div>
+
+
+    </div>
+    </div>
+</body>
+</html>
