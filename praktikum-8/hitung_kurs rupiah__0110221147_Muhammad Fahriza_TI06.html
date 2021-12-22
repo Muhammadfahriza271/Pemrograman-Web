@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Kurs Rupiah</title>
+    <script>
+        let satdol = 14650
+
+        function hitung() {
+            let input = document.getElementById('in').value
+            let hasil = input * satdol
+
+            let format = new Intl.NumberFormat('id-ID')
+
+            document.getElementById('hasil').value = 'Rp.' + format.format(hasil)
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="in" placeholder="Masukan nilai dollar">
+    <button onclick="hitung()">
+        Hitung
+    </button>
+    <br>
+    <br>
+    <input type="text" id="hasil" disabled>
+</body>
+
+</html>

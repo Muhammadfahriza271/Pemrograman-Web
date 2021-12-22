@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Luas & Keliling Lingkarang</title>
+    <script>
+        let phi = 3.14;
+
+        function hitung() {
+            let jari2 = parseFloat(document.getElementById('in_r').value);
+            let luas = phi * (jari2 * jari2)
+            let keliling = 2 * jari2;
+
+            document.getElementById('tam_luas').innerHTML = luas;
+            document.getElementById('tam_kel').innerHTML = keliling;
+        }
+    </script>
+</head>
+
+<body>
+
+    <input placeholder="Masukan Jari2.." type="text" name="" id="in_r">
+    <button onclick="hitung()">Hitung</button>
+    <table>
+        <tr>
+            <td>Hasil Luas :</td>
+            <td id="tam_luas">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Hasil Keliling :
+            </td>
+            <td id="tam_kel">
+
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

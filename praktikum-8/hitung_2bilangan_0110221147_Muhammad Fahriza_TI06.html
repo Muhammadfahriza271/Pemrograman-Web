@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung 2 Bilangan</title>
+    <script>
+        let bil1;
+        let bil2;
+        let hasil;
+
+        function proses() {
+            bil1 = parseInt(document.getElementById('bil1').value);
+            bil2 = parseInt(document.getElementById('bil2').value);
+
+            hasil = bil1 + bil2;
+            document.getElementById('hasil').value = hasil;
+
+        }
+    </script>
+    <style>
+        input {
+            height: 30px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <input placeholder="Masukan Bilangan 1" style="padding-left: 5px;" type="text" id="bil1"><br>
+    <span>+</span><br>
+    <input placeholder="Masukan Bilangan 2" style="padding-left: 5px;" onchange="proses()" type="text" id="bil2"><br>
+    <span>=</span><br>
+    <input type="text" id="hasil" disabled>
+</body>
+
+</html>

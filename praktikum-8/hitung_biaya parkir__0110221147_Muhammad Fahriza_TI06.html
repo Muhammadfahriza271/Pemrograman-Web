@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Biaya Parkir</title>
+    <script>
+        let lama_par;
+        let harga;
+        let ijam_awal;
+        let ijam_ahir;
+
+
+        function hitung() {
+
+            ijam_awal = parseInt(document.getElementById('jam_mas').value);
+            ijam_ahir = parseInt(document.getElementById('jam_kel').value);
+
+            lama_par = ijam_ahir - ijam_awal;
+
+            if (lama_par == 2 || lama_par == 1) {
+                harga = 3000;
+            } else {
+                var par = lama_par - 2;
+                harga = (par * 1000) + 3000;
+            }
+
+            document.getElementById('lama_par').value = lama_par;
+            document.getElementById('bayar').value = harga;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Selamat Datang Di Program Hitung Parkir</p>
+    <table>
+        <tr>
+            <td>Masukan jam Masuk</td>
+            <td><input placeholder="Masukan Jam Masuk" type="text" id="jam_mas"></td>
+        </tr>
+        <tr>
+            <td>Masukan Jam Keluar</td>
+            <td><input placeholder="Masukan Jam Keluar" type="text" id="jam_kel"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="hitung()">Hitung</button></td>
+
+        </tr>
+        <tr>
+            <td>Lama Parkir</td>
+            <td><input type="text" id="lama_par" disabled></td>
+        </tr>
+        <tr>
+            <td>Total Bayar</td>
+            <td><input type="text" id="bayar" disabled></td>
+        </tr>
+    </table>
+</body>
+
+</html>
