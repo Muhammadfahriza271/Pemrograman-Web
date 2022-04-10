@@ -20,7 +20,6 @@ class Account{
 }
 class AccountBank extends Account {
     public $customer;
-    // static $biaya_admin = 6500;
 
     function __construct($nomor, $saldo, $customer){
         parent::__construct($nomor, $saldo);
@@ -30,7 +29,6 @@ class AccountBank extends Account {
     function transfer($obj_account, $uang) {
         $obj_account->deposit($uang);
         $this->withdraw($uang);
-        // $this->witdrawl(self::$biaya_admin);
     }
 
     function cetak() {
