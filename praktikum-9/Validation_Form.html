@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="formValidation.css" />
+    <script src="formValidation.js"></script>
+
+    <title>Validation Form</title>
+  </head>
+  <body>
+    <body>
+      <div class="container1">
+        <form id="form" action="#" method="get" onsubmit="validasi_input()">
+          <h1><span>Validation</span> Form</h1>
+          <div class="input-control">
+            <label for="nama">Nama</label>
+            <input id="nama" nama="nama" type="text" placeholder="Nama Lengkap..." />
+            <div class="error" id="eror1"></div>
+          </div>
+          <div class="input-control">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text" placeholder="Valid email..." />
+            <div class="error" id="eror2"></div>
+          </div>
+          <div class="input-control">
+            <label for="waktu">Waktu</label>
+            <input id="waktu" name="waktu" type="text" placeholder="Hours : minutes" />
+            <div class="error" id="eror3"></div>
+          </div>
+          <div class="input-control">
+            <label for="tujuan">Tujuan</label>
+            <input id="tujuan" name="tujuan" type="text" placeholder="Masukan nama negara, provinsi atau kota tujuan..." />
+            <div class="error" id="eror4"></div>
+          </div>
+          <div class="input-control">
+            <label for="tiket">Jumlah Tiket</label>
+            <input id="tiket" name="tiket" type="number" placeholder="Jumlah tiket yang di beli..." />
+            <div class="error" id="eror5"></div>
+          </div>
+          <button type="submit">S U B M I T</button>
+          <div class="gambar">
+            <img src="reset.jpeg" alt="reset" onclick="hapus_form()" />
+          </div>
+        </form>
+      </div>
+      <div class="padding"></div>
+      <div class="container2">
+        <div class="kotak" id="kotak">
+          <!-- Ini buat hasil -->
+        </div>
+      </div>
+    </body>
+  </body>
+</html>
